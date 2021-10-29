@@ -1,5 +1,6 @@
 #include "GameScene.h"
 #include <Mof.h>
+#include "GameDefine.h"
 
 using namespace Game;
 
@@ -27,6 +28,12 @@ void GameScene::Initialize()
 // 更新
 void GameScene::Update()
 {
+    // エンターキーでタイトルへ 
+    if (g_pInput->IsKeyPush(MOFKEY_RETURN))
+    {
+        changeFlag = true;
+        nextScene = SceneName_Title;
+    }
 }
 
 // 描画

@@ -9,7 +9,7 @@ namespace Game
 	protected:
 
 		// シーン変更フラグ
-		bool changeFlag; 
+		bool changeFlag { false };
 
 		// 変更先シーン
 		int  nextScene;
